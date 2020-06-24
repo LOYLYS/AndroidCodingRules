@@ -42,6 +42,7 @@ Tên ID nên được bắt đầu bằng tiền tố là tên phần tử, tấ
 |---------------| --------------|-----------------------|
 | Action bar    | `ab_`         | `ab_stacked`          |
 | Button        | `btn_`	      | `btn_next`            |
+| ConstraintLayout  | `constraint_`	    | `constraint_container`         |
 | Dialog        | `dialog_`     | `dialog_rating`       | 
 | EditText      | `edit_`       | `edit_password`       |
 | FrameLayout  | `frame_`	    | `frame_container`         |
@@ -58,7 +59,7 @@ Tên ID nên được bắt đầu bằng tiền tố là tên phần tử, tấ
 
 Quy ước đặt tên cho Icon :
 
-| Kiểu                            | Tiếp tố            | Ví dụ                        |
+| Kiểu                            | Tiền tố            | Ví dụ                        |
 | --------------------------------| ----------------   | ---------------------------- | 
 | Icons                           | `ic_`              | `ic_star.png`                |
 | Launcher icons                  | `ic_launcher`      | `ic_launcher_calendar.png`   |
@@ -99,3 +100,40 @@ Chú ý rằng tên file không cần bao gồm `menu` vì file đã được ch
 #### 1.2.4 Values files
 
 Tên tập tin nên có thêm __số nhiều__. Ví dụ `strings.xml`, `styles.xml`, `colors.xml`, `dimens.xml`, `attrs.xml`
+
+# Tự tạo một thư viện Android
+Một thư viện Android có cấu trúc giống như một mô-đun ứng dụng Android. Nó có thể bao gồm mọi thứ cần thiết để xây dựng một ứng dụng, bao gồm mã nguồn, tệp tài nguyên và Androidmanifest.
+Có thể sử dụng thư viện Android trong các trường hợp sau:
+* Khi bạn xây dựng nhiều ứng dụng sử dụng một số thành phần giống nhau, chẳng hạn như activities, services, or UI layouts.
+* Khi bạn đang xây dựng một ứng dụng tồn tại trong nhiều biến thể APK, chẳng hạn như phiên bản miễn phí và trả phí và bạn cần các thành phần cốt lõi giống nhau trong cả hai.
+
+## Các bước tạo một thư viện Android
+### 1. Tạo app module
+1. Click File > New > New Module.
+2. Giao diện Create New Module xuất hiện, click Android Library > Next.
+3. Đặt tên cho module, lựa chọn minSDK và bấm Finish
+4. Sau khi hoàn thành Gradle project sync, cấu trúc module xuất hiện như một project
+### 2. Chuyển đổi app module thành library module
+1. Mở `build.gradle` của module.
+2. Xóa thuộc tính `applicationId`
+3. Thay đổi
+```
+apply plugin: 'com.android.application'
+```
+thành
+```
+apply plugin: 'com.android.library'
+```
+4. Click **File > Sync Project with Gradle Files.**
+### 3. Sử dụng thư viện
+1. Thêm thư viện vào `setting.gradle`
+```
+include ':app', ':my-library-module'
+```
+2. Thêm dependency trong app `build.gradle`
+```
+dependencies {
+    implementation project(":my-library-module")
+}
+```
+3. Click **Sync Project with Gradle Files.**
