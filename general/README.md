@@ -34,6 +34,7 @@ Ví dụ: activity_main, fragment_login, dialog_sign_in,...
 #### 1.2.1 Tên file Drawables
 
 Quy ước đặt tên cho Id:
+Tên ID nên được bắt đầu bằng tiền tố là tên phần tử, tất cả chữ thường và gạch chân
 
 
 | Kiểu          | Tiền tố       |		Ví dụ               |
@@ -42,10 +43,13 @@ Quy ước đặt tên cho Id:
 | Button        | `btn_`	      | `btn_next`            |
 | Dialog        | `dialog_`     | `dialog_rating`       | 
 | EditText      | `edit_`       | `edit_password`       |
+| FrameLayout  | `frame_`	    | `frame_container`         |
 | ImageView     | `image_`	    | `image_star`          |
+| LinearLayout  | `linear_`	    | `linear_container`         |
 | ListView      | `lview_`	    | `lview_users`         |
 | Menu          | `menu_	`     | `menu_settings`       |
 | RecyclerView  | `rview_`	    | `rview_fonts`         |
+| RelativeLayout  | `relative_`	    | `relative_container`         |
 | SearchView    | `sview_`	    | `sview_song`         |
 | TextView      | `text_`       | `text_user_name`      |
 | VideoView     | `vview_`      | `vview_guide`         |
