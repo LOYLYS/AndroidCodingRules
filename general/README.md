@@ -10,6 +10,7 @@
 * ui
   * activity
   * adapter
+  * customview
   * dialog
   * fragment
   * widget
@@ -91,7 +92,7 @@ Tên cho selector states:
 
 #### 1.2.3 Menu files
 
-Vì menu không chứa các thành phần Android nên để đặt tên Menu cần nên đặt tên theo màn hình sử dụng. Ví dụ trong ``MainActivity` thì tên file menu sẽ là `activity_main.xml`
+Vì menu không chứa các thành phần Android nên để đặt tên Menu cần nên đặt tên theo màn hình sử dụng. Ví dụ trong `MainActivity` thì tên file menu sẽ là `activity_main.xml`
 
 Chú ý rằng tên file không cần bao gồm `menu` vì file đã được chứa trong thư mục `menu`
 
