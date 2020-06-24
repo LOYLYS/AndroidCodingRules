@@ -1,6 +1,6 @@
 ## Quy tắc triển khai dự án Android
 
-### 1. Cấu trúc dự án theo mô hình MVP
+### 1. Quy tắc chung cho dự án
    Xem tại [đây](general/README.md).
       
 ### 2. Quy tắc viết code Java
