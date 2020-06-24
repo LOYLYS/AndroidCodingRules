@@ -8,7 +8,10 @@
       
 ### 3. Sử dụng git hiệu quả
    Xem tại [đây](git/README.md).
-
-### 4. Tài liệu tham khảo
+   
+### 4. Triển khai design pattern
+   Xem tại [đây](designpattern/README.md).
+   
+### 5. Tài liệu tham khảo
    Xem tại [đây](references/README.md).
 
