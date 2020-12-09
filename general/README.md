@@ -1,20 +1,27 @@
-# Cấu trúc của một Dự Án theo mô hình MVP
+# Cấu trúc của một Dự Án theo mô hình MVVM
 
 #### Base Application
 * data
-	* remote
-	* local
-	* model
-* presenter
+  * remote
+  * local
+  * model
+  * repo
+* helper
+  * di (Dagger injection)
+  * rx (Rxjava, RxKotlin, RxAndroid)
+  * sharedpref (Shared Preferences)
+  * admob
+  * firebase
 * service
-* ui
+* view
+  * base
   * activity
   * adapter
-  * customview
+  * custom
   * dialog
   * fragment
-  * widget
-* util
+* util (BindingUtils, Enums, Constants, Extensions)
+* MainApplication
 
 ## 1. Cách đặt tên files
 
@@ -67,6 +74,7 @@ Quy ước đặt tên cho Icon :
 | Status bar icons                | `ic_stat_notify`   | `ic_stat_notify_msg.png`     |
 | Tab icons                       | `ic_tab`           | `ic_tab_recent.png`          |
 | Dialog icons                    | `ic_dialog`        | `ic_dialog_info.png`         |
+| Background                      | `bg_dialog`        | `bg_dialog_info.png`         |
 
 Tên cho selector states:
 
