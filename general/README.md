@@ -47,31 +47,29 @@ Tên ID nên được bắt đầu bằng tiền tố là tên phần tử, tấ
 
 | Kiểu          | Tiền tố       |		Ví dụ               |
 |---------------| --------------|-----------------------|
-| Action bar    | `ab_`         | `ab_stacked`          |
-| Button        | `btn_`	      | `btn_next`            |
+| Tool bar    | `tool_bar`         | `tool_bar_main`          |
+| Button        | `button_`	      | `button_next`            |
 | ConstraintLayout  | `constraint_`	    | `constraint_container`         |
 | Dialog        | `dialog_`     | `dialog_rating`       | 
 | EditText      | `edit_`       | `edit_password`       |
 | FrameLayout  | `frame_`	    | `frame_container`         |
 | ImageView     | `image_`	    | `image_star`          |
 | LinearLayout  | `linear_`	    | `linear_container`         |
-| ListView      | `lview_`	    | `lview_users`         |
-| Menu          | `menu_	`     | `menu_settings`       |
+| ListView      | `list_`	    | `list_users`         |
+| Navigation bar          | `navigation_	`     | `navigation_home`       |
 | RecyclerView  | `rview_`	    | `rview_fonts`         |
 | RelativeLayout  | `relative_`	    | `relative_container`         |
-| SearchView    | `sview_`	    | `sview_song`         |
+| View    | `view_`	    | `view_background`         |
 | TextView      | `text_`       | `text_user_name`      |
 | VideoView     | `vview_`      | `vview_guide`         |
-| WebView       | `wview_`      | `wview_home`          |
+| TabLayout       | `tab_layout`      | `tab_layout_home`          |
 
 Quy ước đặt tên cho Icon :
 
 | Kiểu                            | Tiền tố            | Ví dụ                        |
 | --------------------------------| ----------------   | ---------------------------- | 
 | Icons                           | `ic_`              | `ic_star.png`                |
-| Launcher icons                  | `ic_launcher`      | `ic_launcher_calendar.png`   |
 | Menu icons and Action Bar icons | `ic_menu`          | `ic_menu_archive.png`        |
-| Status bar icons                | `ic_stat_notify`   | `ic_stat_notify_msg.png`     |
 | Tab icons                       | `ic_tab`           | `ic_tab_recent.png`          |
 | Dialog icons                    | `ic_dialog`        | `ic_dialog_info.png`         |
 | Background                      | `bg_dialog`        | `bg_dialog_info.png`         |
@@ -97,7 +95,7 @@ Tên cho selector states:
 | Fragment         | `SignUpFragment`       | `fragment_sign_up.xml`        |
 | Dialog           | `ChangePasswordDialog` | `dialog_change_password.xml`  |
 | AdapterView item | ---                    | `item_person.xml`             |
-| Partial layout   | ---                    | `layout_partial_stats_bar.xml`       |
+| Layout khác      | ---                    | `layout_partial_stats_bar.xml`|
 
 #### 1.2.3 Menu files
 
